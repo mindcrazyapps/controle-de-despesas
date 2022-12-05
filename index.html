@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Um projetinho bem legal sobre controle de despesas."
+    />
+    <meta name="keywords" content="HTML5, CSS3, JavaScript, Vite, GIT" />
+    <meta name="author" content="Matheus Faustino" />
+
+    <link rel="shortcut icon" href="public/favicon.ico" type="image/x-icon" />
+    <title>Controle de despesas</title>
+  </head>
+  <body>
+    <header>
+      <h1>Controle de Despesas</h1>
+    </header>
+
+    <main>
+      <h2>Saldo atual</h2>
+      <div class="balance-div">
+        R$
+        <span class="current-balance">1200.00</span>
+      </div>
+
+      <div class="income-and-expenses-div">
+        <div class="incomes-div">
+          <h3>Receitas</h3>
+          <div class="income-div-color">
+            + R$ <span class="incomes-value">0.00</span>
+          </div>
+        </div>
+
+        <div class="vertical-row"></div>
+
+        <div class="expenses-div">
+          <h3>Despesas</h3>
+          <div class="expenses-div-color">
+            - R$ <span class="expenses-value">0.00</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="transactions-wrapper">
+        <h2>Transações</h2>
+        <hr />
+        <ul class="all-transactions"></ul>
+      </div>
+
+      <div class="add-transactions">
+        <h2>Adicionar transação</h2>
+        <hr />
+        <form
+          action="post"
+          class="transactions-form"
+          onsubmit="addTransaction()"
+        >
+          <label for="transactions-name">Nome</label>
+          <input
+            type="text"
+            name="transactions-name"
+            id="transactions-name"
+            placeholder="Nome da transação"
+            maxlength="16"
+            tabindex="1"
+            required
+          />
+
+          <label for="transactions-value">
+            Valor
+            <span class="small-letters">
+              <small>(negativo - despesas, positivo - receitas)</small>
+            </span>
+          </label>
+          <input
+            type="number"
+            name="transactions-value"
+            id="transactions-value"
+            placeholder="Valor da transação"
+            maxlength="16"
+            tabindex="2"
+            step=".01"
+            required
+          />
+
+          <button type="submit">Adicionar</button>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      By
+      <a href="https://github.com/matheusfdosan" target="_blank">
+        Matheus Faustino
+      </a>
+    </footer>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

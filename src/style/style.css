@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+:root {
+  --lato-font: "Lato", sans-serif;
+  --red-color: #c0392b;
+  --dark-red-color: #84281c;
+  --green-color: #2ecc71;
+  --blue-color: #2e75cc;
+  --purple-color: #9c88ff;
+  --dark-purple-color: #6c5fae;
+  --dark-color: #00000057;
+}
+
+h1 {
+  margin: 20px;
+  text-align: center;
+}
+
+main {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 20px;
+  padding: 15px;
+}
+
+.balance-div {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--blue-color);
+}
+
+.income-and-expenses-div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  margin: 20px 0;
+  padding: 20px;
+
+  width: 100%;
+
+  text-align: center;
+
+  box-shadow: 1px 1px 6px 0px var(--dark-color);
+
+  overflow: hidden;
+}
+
+.income-div-color {
+  font-size: 1.3rem;
+  color: var(--green-color);
+}
+
+.vertical-row {
+  width: 1px;
+  height: 50px;
+  background-color: var(--dark-color);
+  margin: 0 5px;
+}
+
+.expenses-div-color {
+  color: var(--red-color);
+  font-size: 1.3rem;
+}
+
+h2 {
+  margin-bottom: 5px;
+}
+
+.transactions-wrapper {
+  margin: 20px 0;
+}
+
+.transactions-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  height: 45px;
+  box-shadow: 1px 1px 6px 0px var(--dark-color);
+
+  transition: all 200ms ease;
+}
+
+.transactions-cards:hover {
+  transform: scale(1.02);
+}
+
+.name-and-value {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.delete-button {
+  background-color: var(--red-color);
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+}
+
+.delete-button:hover {
+  background-color: var(--dark-red-color);
+}
+
+.transactions-form {
+  margin: 20px 0;
+}
+
+label,
+input,
+.small-letters {
+  display: block;
+}
+
+label {
+  font-size: 1.3rem;
+}
+
+input {
+  font-size: 1.1rem;
+  margin: 7px 0px 14px 0;
+  padding: 8px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid var(--dark-color);
+  border-radius: 2px;
+}
+
+form button,
+.add-current-balance-button {
+  background-color: var(--purple-color);
+  width: 100%;
+  height: 40px;
+  border: none;
+  color: #fff;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+form button:hover,
+.add-current-balance-button:hover {
+  background-color: var(--dark-purple-color);
+}
+
+footer {
+  text-align: center;
+  font-size: large;
+  margin: 20px;
+}
+
+footer a {
+  color: var(--purple-color);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--dark-purple-color);
+}
