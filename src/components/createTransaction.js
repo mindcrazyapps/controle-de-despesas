@@ -9,11 +9,11 @@ export default function createTransaction(name, value, array) {
 
   const spanValue = document.createElement("span")
   spanValue.setAttribute("class", "span-value")
-  spanValue.textContent = `${array[0]} ${value}`
+  spanValue.textContent = `${array[0]} ${value * -1}`
 
   const imgTrash = document.createElement("img")
   imgTrash.setAttribute("class", "delete-button")
-  imgTrash.src = "./src/assets/trash-icon.png"
+  imgTrash.src = "./src/images/trash-icon.png"
   imgTrash.alt = "lixeira"
 
   const nameAndValue = document.createElement("div")
