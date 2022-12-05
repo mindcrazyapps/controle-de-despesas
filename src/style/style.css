@@ -49,6 +49,7 @@ main {
   text-align: center;
 
   box-shadow: 1px 1px 6px 0px var(--dark-color);
+  border-radius: 5px;
 
   overflow: hidden;
 }
@@ -105,6 +106,7 @@ h2 {
   cursor: pointer;
   width: 32px;
   height: 32px;
+  border-radius: 3px;
 }
 
 .delete-button:hover {

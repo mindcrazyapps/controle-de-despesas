@@ -27,8 +27,8 @@ form.onsubmit = (event) => {
     currentBalance = currentBalance - Number(transactionValue) * -1
     currentExpenses = currentExpenses - transactionValue
 
-    balance.innerHTML = currentBalance
-    expenses.innerHTML = currentExpenses
+    balance.innerHTML = currentBalance.toFixed(2)
+    expenses.innerHTML = currentExpenses.toFixed(2)
   } else if (transactionValue > 0) {
     currentBalance = currentBalance + Number(transactionValue)
     currentIncomes = currentIncomes + Number(transactionValue)
