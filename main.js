@@ -1,4 +1,4 @@
-import "./src/style/style.css"
+import "./src/styles/style.css"
 import createTransaction from "./src/components/createTransaction"
 
 const form = document.querySelector(".transactions-form")
@@ -20,7 +20,11 @@ form.onsubmit = (event) => {
   const monetaryValueAndColor = monetaryAndColor(transactionValue)
 
   ul.append(
-    createTransaction(transactionName.value, transactionValue, monetaryValueAndColor)
+    createTransaction(
+      transactionName.value,
+      transactionValue,
+      monetaryValueAndColor
+    )
   )
 
   if (transactionValue < 0) {

@@ -13,7 +13,8 @@ export default function createTransaction(name, value, array) {
 
   const imgTrash = document.createElement("img")
   imgTrash.setAttribute("class", "delete-button")
-  imgTrash.src = "./src/asset/trash-icon.png"
+  imgTrash.src = "./src/assets/trash-icon.png"
+  imgTrash.alt = "lixeira"
 
   const nameAndValue = document.createElement("div")
   nameAndValue.setAttribute("class", "name-and-value")
