@@ -1,5 +1,6 @@
 import "./src/styles/style.css"
 import createTransaction from "./src/components/createTransaction"
+import monetaryAndColor from "./src/components/monetaryAndColor"
 
 const form = document.querySelector(".transactions-form")
 const ul = document.querySelector(".all-transactions")
@@ -43,22 +44,6 @@ form.onsubmit = (event) => {
 
   form.reset()
   transactionName.focus()
-}
-
-function monetaryAndColor(value) {
-  let monetary = "+ R$ "
-  let color = "5px solid #2ecc71"
-
-  if (value < 0) {
-    monetary = "- R$ "
-    color = "5px solid #c0392b"
-
-    const monetaryAndColor = [monetary, color]
-    return monetaryAndColor
-  }
-
-  const monetaryAndColor = [monetary, color]
-  return monetaryAndColor
 }
 
 ul.onclick = (event) => {

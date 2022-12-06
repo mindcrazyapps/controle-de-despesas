@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Lato", sans-serif;
+  font-family: var(--lato-font);
 }
 
 :root {
@@ -87,6 +87,7 @@ h2 {
   padding: 10px;
   height: 45px;
   box-shadow: 1px 1px 6px 0px var(--dark-color);
+  border-radius: 3px;
 
   transition: all 200ms ease;
 }
