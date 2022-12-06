@@ -1,3 +1,5 @@
+import trashIcon from "..\\assets\\icon-trash.png"
+
 export default function createTransaction(name, value, array) {
   const li = document.createElement("li")
   li.setAttribute("class", "transactions-cards")
@@ -13,7 +15,7 @@ export default function createTransaction(name, value, array) {
 
   const imgTrash = document.createElement("img")
   imgTrash.setAttribute("class", "delete-button")
-  imgTrash.src = "./src/images/trash-icon.png"
+  imgTrash.src = trashIcon
   imgTrash.alt = "lixeira"
 
   const nameAndValue = document.createElement("div")
