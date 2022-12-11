@@ -12,11 +12,16 @@
     <meta name="keywords" content="HTML5, CSS3, JavaScript, Vite, GIT" />
     <meta name="author" content="Matheus Faustino" />
 
+    <link rel="preload" href="src/styles/style.css" as="style" />
+    <link rel="preload" href="main.js" as="script" />
+
     <link rel="shortcut icon" href="public/favicon.ico" type="image/x-icon" />
+
+    <meta name="theme-color" content="#fffff" />
+
     <title>Controle de despesas</title>
   </head>
   <body>
-    
     <header>
       <h1>Controle de Despesas</h1>
     </header>
@@ -89,14 +94,14 @@
             required
           />
 
-          <button type="submit">Adicionar</button>
+          <button type="submit" tabindex="3">Adicionar</button>
         </form>
       </div>
     </main>
 
     <footer>
       By
-      <a href="https://github.com/matheusfdosan" target="_blank">
+      <a href="https://github.com/matheusfdosan" target="_blank" tabindex="4">
         Matheus Faustino
       </a>
     </footer>
