@@ -4,7 +4,7 @@
 
 Um projetinho bem legal sobre controle de despesas, com o layout e cores totalmente copiado desse [vídeo](https://youtu.be/xarRciYWT5Q), mas o código em JavaScript eu mesmo que fiz.
 
-Veja [aqui](https://controle-de-despesas-pi.vercel.app/)
+Veja o projeto clicando [aqui](https://controle-de-despesas-dhg7ufzqm-matheusfdosan.vercel.app/).
 
 ## Techs
 
