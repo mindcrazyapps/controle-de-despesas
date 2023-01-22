@@ -10,9 +10,9 @@ Veja [aqui](https://controle-de-despesas-pi.vercel.app/)
 
 - HTML
 - CSS
-- JavaScript
+- JavaScript DOM
 - [Vite](https://vitejs.dev/)
-- GIT
+- Git & Github
 
 ## Contato 
 
